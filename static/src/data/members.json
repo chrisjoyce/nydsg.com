@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Christine Joyce",
+    "role": "President",
+    "contact": {
+      "phone": "(516) 429-2644",
+      "email": "cghjoyce@yahoo.com"
+    },
+    "board": true,
+    "hotline": true,
+    "ostomy": true
+  },
+  {
+    "name": "Diego Arango",
+    "role": "Vice President",
+    "board": true,
+    "hotline": true,
+    "ostomy": true
+  },
+  {
+    "name": "Marlene Coccaro",
+    "board": true,
+    "contact":{
+      "phone": "(914) 760-3929"
+    },
+    "hotline": true,
+    "ostomy": false
+  },
+  {
+    "name": "Marc Furman",
+    "board": true,
+    "contact": {
+      "phone": "(631) 926-3370"
+    }
+  },
+  {
+    "name": "Phyllis Furman",
+    "contact": {
+      "phone": "(631) 926-3370"
+    }
+  },
+  {
+    "name": "Scott MacGregor"
+  },
+  {
+    "name": "Frank Scala",
+    "contact": {
+      "phone": "(631) 766-3339"
+    }
+  },
+  {
+    "name": "Anthony Gigliotti",
+    "contact": {
+      "phone": "(631) 871-6854"
+    }
+  }
+]
