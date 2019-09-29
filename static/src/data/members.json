@@ -8,14 +8,21 @@
     },
     "board": true,
     "hotline": true,
-    "ostomy": true
+    "ostomy": true,
+    "surgeryType": "emergency"
   },
   {
     "name": "Diego Arango",
     "role": "Vice President",
     "board": true,
     "hotline": true,
-    "ostomy": true
+    "ostomy": true,
+    "contact": {
+      "phone": "(914) 456-6464",
+      "email": "dpnut2@hotmail.com"
+    },
+    "surgeryType": "emergency",
+    "spanish": true
   },
   {
     "name": "Marlene Coccaro",
@@ -24,34 +31,52 @@
       "phone": "(914) 760-3929"
     },
     "hotline": true,
-    "ostomy": false
+    "ostomy": false,
+    "surgeryType": "elective"
   },
   {
     "name": "Marc Furman",
     "board": true,
     "contact": {
       "phone": "(631) 926-3370"
-    }
+    },
+    "surgeryType": "elective"
   },
   {
     "name": "Phyllis Furman",
     "contact": {
       "phone": "(631) 926-3370"
-    }
+    },
+    "surgeryType": "emergency"
   },
   {
-    "name": "Scott MacGregor"
+    "name": "Scott MacGregor",
+    "surgeryType": "emergency",
+    "contact": {
+      "phone":  "(631) 974-5349"
+    }
   },
   {
     "name": "Frank Scala",
     "contact": {
       "phone": "(631) 766-3339"
-    }
+    },
+    "surgeryType": "elective"
   },
   {
     "name": "Anthony Gigliotti",
     "contact": {
       "phone": "(631) 871-6854"
-    }
+    },
+    "surgeryType": "elective"
+  },
+  {
+    "name": "Francisco Arevalo Sandoval",
+    "contact": {
+      "phone": "(845) 721-3275",
+      "email": ""
+    },
+    "spanish": true,
+    "surgeryType": "elective"
   }
 ]

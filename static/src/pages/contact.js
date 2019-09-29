@@ -12,7 +12,7 @@ function ContactPage() {
       />
       <section>
         <h1 className="mx-auto md:w-1/2 text-center text-6xl">Get in Touch!</h1>
-        <form className="mx-auto md:w-1/2">
+        <form className="mx-auto md:w-1/2" action="mailto:cghjoyce@yahoo.com">
           <label className="block font-bold mb-2 text-xs uppercase"htmlFor="name">
             Name
           </label>
@@ -63,7 +63,7 @@ function ContactPage() {
             rows="8"
           />
 
-          <button className="border-b-4 border-gray-800 hover:border-gray-700 bg-gray-700 hover:bg-gray-600 font-bold px-4 py-2 rounded text-sm text-white">
+          <button submit className="border-b-4 border-gray-800 hover:border-gray-700 bg-gray-700 hover:bg-gray-600 font-bold px-4 py-2 rounded text-sm text-white">
             Submit
           </button>
         </form>

@@ -32,7 +32,7 @@ function IndexPage() {
           This disease is an equal opportunity disease…it affects young and old, male and female, rich and poor. Our members here have all had different experiences with diverticulitis but share one common belief: we can learn so much from each other about living with this disease.
         </p>
         <p className="text-center text-4xl">
-          <Link to="contact">We invite you to join us.</Link>
+          <Link to="members">We invite you to contact us.</Link>
         </p>
       </section>
     </Layout>

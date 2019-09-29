@@ -6,9 +6,14 @@ import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
+import TableHead from '@material-ui/core/TableHead';
 
-import { withStyles, makeStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
 import { useStaticQuery, graphql } from "gatsby";
+import Paper from '@material-ui/core/Paper';
+
+import { makeStyles } from '@material-ui/core/styles';
+
 
 const StyledTableRow = withStyles(theme => ({
   root: {
@@ -28,17 +33,6 @@ const StyledTableCell = withStyles(theme => ({
   }
 }))(TableCell);
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
-
-const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9)
-];
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -50,6 +44,7 @@ const useStyles = makeStyles(theme => ({
     minWidth: 700
   }
 }));
+
 function MembersPage() {
   const data = useStaticQuery(
     graphql`
@@ -58,6 +53,12 @@ function MembersPage() {
           edges {
             node {
               name
+              hotline
+              contact {
+                email
+                phone
+              }
+              surgeryType
             }
           }
         }
@@ -65,7 +66,29 @@ function MembersPage() {
     `
   );
 
-  console.log(data);
+  // const members = data.allMembersJson.edges;
+  function checkHotline(item) {
+    return item.hotline === true;
+  }
+  function getEmergencyContact(item) {
+    return item.surgeryType === "emergency";
+  }
+  function getElectiveContact(item) {
+    return item.surgeryType === "elective";
+  }
+
+  const members = data.allMembersJson.edges.map(item => item.node);
+  const emergecyContactList = members.filter(getEmergencyContact);
+  const electiveContactList = members.filter(getElectiveContact);
+  // let members = data.allMembersJson.edges.filter(checkHotline);
+  // members = members.map(item => item.node);
+  // console.log(data.allMembersJson.edges);
+
+  // let emergecyContactList = data.allMembersJson.edges.filter(getEmergencyContact)
+  // console.log(emergecyContactList);
+  // emergecyContactList = emergecyContactList.map(item => item.node);
+  const classes = useStyles();
+
   return (
     <Layout>
       <SEO title="Members" keywords={[`diverticullitis`]} />
@@ -79,15 +102,44 @@ function MembersPage() {
         </p>
       </div>
 
+      <br></br>
+      <div className="text-center text-xl font-bold pb-4">
+        <h1>Emergency Surgery with temporary ostomy</h1>
+      </div>
+
       <Table>
         <TableBody>
-          {data.map(row => (
+          {emergecyContactList.map(row => (
             <StyledTableRow key={row.name}>
               <StyledTableCell component="th" scope="row">
                 {row.name}
               </StyledTableCell>
-              {/* <StyledTableCell align="right">{row.calories}</StyledTableCell>
-              <StyledTableCell align="right">{row.fat}</StyledTableCell>
+              <StyledTableCell align="right">{ row.contact && row.contact.phone }</StyledTableCell>
+              <StyledTableCell align="right">{ row.contact && row.contact.email }</StyledTableCell>
+
+              {/*
+              <StyledTableCell align="right">{row.carbs}</StyledTableCell>
+              <StyledTableCell align="right">{row.protein}</StyledTableCell> */}
+            </StyledTableRow>
+          ))}
+
+          <TableRow>
+            <TableCell rowSpan={2} colSpan={3} align="center">
+              <div className="text-center text-xl font-bold pb-4">
+                <h1>Elective Surgery without ostomy</h1>
+              </div>
+            </TableCell>
+          </TableRow>
+
+          <TableRow></TableRow>
+          {electiveContactList.map(row => (
+            <StyledTableRow key={row.name}>
+              <StyledTableCell component="th" scope="row">
+                {row.name}
+              </StyledTableCell>
+              <StyledTableCell align="right">{ row.contact && row.contact.phone }</StyledTableCell>
+              <StyledTableCell align="right">{ row.contact && row.contact.email }</StyledTableCell>
+              {/*
               <StyledTableCell align="right">{row.carbs}</StyledTableCell>
               <StyledTableCell align="right">{row.protein}</StyledTableCell> */}
             </StyledTableRow>
