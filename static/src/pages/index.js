@@ -33,7 +33,7 @@ function IndexPage() {
         </p>
        
         <p className="text-center text-2xl">
-          <div><span className="text-yellow-800">**</span> We welcome you to join us for a meeting Saturday October 12th</div>
+          <div><span className="text-yellow-800">**</span> We welcome you to join us for a meeting Saturday November 16th</div>
           <div>from 12 - 1:30pm at the <a target="_blank" href="https://www.google.com/maps/dir//150%20Holbrook%20Rd,%20Holbrook,%20NY%2011741">Sachem Public Library 150 Holbrook Rd, Holbrook, NY 11741 <span className="text-yellow-800">**</span></a></div>
         </p>
         <p className="text-center text-2xl">
