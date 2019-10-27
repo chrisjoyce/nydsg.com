@@ -46,6 +46,11 @@ function Header({ siteTitle }) {
               Home
             </Link>
             <Link
+              to="/mission"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white">
+              Mission
+            </Link>
+            <Link
               to="/info"
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white">
               Information

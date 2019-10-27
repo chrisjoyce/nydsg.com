@@ -6,7 +6,7 @@ import SEO from "../components/seo";
 import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 import logo from '../images/logo.png';
 
-function IndexPage() {
+function MissionPage() {
   return (
     <Layout>
       <SEO
@@ -18,33 +18,26 @@ function IndexPage() {
         <img className="float-left mr-4 my-2 h-48" src={logo} />
 
 
-        <p className="leading-normal pb-3 text-sm">
-          <div>NEWS/NYDSG.com</div>
-          <div>October 12, 2019</div>
+        <p className="leading-normal pb-5">
+        The goal of the New York Diverticulitis Support Group is to bring awareness about this disease and offer help to those who have it as well as support for their family members. They are also affected.
         </p>
 
         <p className="leading-normal pb-5">
-        I want to say thank you to everybody who attended the very first meeting of the New York Diverticulitis Support Group Saturday, October 12 and a thank you to those that tried to make it and could not.
+        Family members often have to deal with the type of care and lifestyle changes that may be required. Having a positive support system helps the diverticulitis patient deal with not only current healing but also helps them prevent future attacks by focusing on proper diet and education. This support is a crucial part of managing this disease.
         </p>
         <p className="leading-normal pb-5">
-        We shared pumpkin cake, fresh fruit, website ideas, and our personal diverticulitis stories. What we learned was that, even within the small group of us, there were four different levels of diverticulitis experiences.
+        Our focus is also on identifying and matching people in your family tree that might be at risk. Addressing early symptoms can often prevent the need for future surgery or permanent colostomy or ileostomy.
         </p>
         <p className="leading-normal pb-5">
-        And a big thank you to Dr. Roberto Bergamaschi for his time, support and encouragement of our group. He also gave a great explanation of this disease, complete with drawings on the white board!
-        </p>
-        
-        <p className="leading-normal pb-5">
-        We look forward to seeing you at our next meeting November 16 (click below for directions).  Please email or call me if you have any questions.
+          This disease is an equal opportunity disease…it affects young and old, male and female, rich and poor. Our members here have all had different experiences with diverticulitis but share one common belief: we can learn so much from each other about living with this disease.
         </p>
        
-        <p className="leading-normal pb-5">
-          <div pb-2>Christine Joyce</div>
-          <div>Acting President</div>
-        </p>
-
         <p className="text-center text-2xl">
           <div><span className="text-yellow-800">**</span> We welcome you to join us for a meeting Saturday November 16th</div>
           <div>from 12 - 1:30pm at the <a target="_blank" href="https://www.google.com/maps/dir//150%20Holbrook%20Rd,%20Holbrook,%20NY%2011741">Sachem Public Library 150 Holbrook Rd, Holbrook, NY 11741 <span className="text-yellow-800">**</span></a></div>
+        </p>
+        <p className="text-center text-2xl">
+        
         </p>
 
         <p className="text-center text-4xl pt-10">
@@ -55,4 +48,4 @@ function IndexPage() {
   );
 }
 
-export default IndexPage;
+export default MissionPage;

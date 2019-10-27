@@ -1,8 +1,8 @@
 {
   "name": "@oddstronaut/gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "3.0.132",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "description": "New York Diverticulitis Support Group",
+  "version": "0.1.0",
+  "author": "Chris Joyce <ctjoyce@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.4.3",
     "@material-ui/styles": "^4.4.3",
