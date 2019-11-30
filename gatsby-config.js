@@ -9,7 +9,7 @@ module.exports = {
       },
       title: "",
       body:
-        "We look forward to seeing you at our next meeting on December 14 at the Sachem Public Library. Check back here for more information."
+        "We look forward to seeing you at our next meeting on December 14 at the Sachem Library. Check back here for more information."
     }
   },
   plugins: [
