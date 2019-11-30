@@ -10,7 +10,6 @@ function SEO({ description, lang, meta, keywords, title }) {
         siteMetadata {
           title
           description
-          author
         }
       }
     }
@@ -45,10 +44,6 @@ function SEO({ description, lang, meta, keywords, title }) {
         {
           name: `twitter:card`,
           content: `summary`
-        },
-        {
-          name: `twitter:creator`,
-          content: data.site.siteMetadata.author
         },
         {
           name: `twitter:title`,
