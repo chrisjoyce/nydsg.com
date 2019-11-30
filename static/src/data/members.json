@@ -27,7 +27,7 @@
   {
     "name": "Marlene Coccaro",
     "board": true,
-    "contact":{
+    "contact": {
       "phone": "(914) 760-3929"
     },
     "hotline": true,
@@ -39,21 +39,18 @@
     "board": true,
     "contact": {
       "phone": "(631) 926-3370"
-    },
-    "surgeryType": "elective"
+    }
   },
   {
     "name": "Phyllis Furman",
     "contact": {
       "phone": "(631) 926-3370"
-    },
-    "surgeryType": "emergency"
+    }
   },
   {
     "name": "Scott MacGregor",
-    "surgeryType": "emergency",
     "contact": {
-      "phone":  "(631) 974-5349"
+      "phone": "(631) 974-5349"
     }
   },
   {
@@ -64,9 +61,9 @@
     "surgeryType": "elective"
   },
   {
-    "name": "Anthony Gigliotti",
+    "name": "Tom Schiavone",
     "contact": {
-      "phone": "(631) 871-6854"
+      "phone": "(631) 813-6802"
     },
     "surgeryType": "elective"
   },
@@ -76,7 +73,6 @@
       "phone": "(845) 721-3275",
       "email": ""
     },
-    "spanish": true,
-    "surgeryType": "elective"
+    "spanish": true
   }
 ]

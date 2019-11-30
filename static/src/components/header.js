@@ -38,27 +38,32 @@ function Header({ siteTitle }) {
         <div
           className={`${
             isExpanded ? `block` : `hidden`
-            } md:block md:flex md:items-center w-full md:w-auto`} >
+          } md:block md:flex md:items-center w-full md:w-auto`}
+        >
           <div className="text-sm">
             <Link
               to="/"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white">
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+            >
               Home
             </Link>
             <Link
               to="/mission"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white">
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+            >
               Mission
             </Link>
             <Link
               to="/info"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white">
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+            >
               Information
             </Link>
             <Link
-              to="/members"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white">
-              Members
+              to="/hotline"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+            >
+              Hotline
             </Link>
 
             <Link
@@ -67,7 +72,6 @@ function Header({ siteTitle }) {
             >
               Contact
             </Link>
-
           </div>
         </div>
       </div>
