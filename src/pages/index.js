@@ -46,7 +46,6 @@ function IndexPage() {
 
         <p className="leading-normal pb-5">
           <div pb-2>Christine Joyce</div>
-          <div>Acting President</div>
         </p>
 
         <p className="text-center text-xl">
