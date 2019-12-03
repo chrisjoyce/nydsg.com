@@ -7,7 +7,7 @@ module.exports = {
         date: "December 14th",
         time: "12 - 1:30pm"
       },
-      title: "",
+      title: "Hi Mom",
       body:
         "We look forward to seeing you at our next meeting on December 14 at the Sachem Public Library. Check back here for more information."
     }
