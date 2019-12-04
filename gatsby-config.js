@@ -2,7 +2,15 @@ module.exports = {
   siteMetadata: {
     title: `New York Diverticulitis Support Group`,
     description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`
+    news: {
+      meeting: {
+        date: "December 14th",
+        time: "12 - 1:30pm"
+      },
+      title: "",
+      body:
+        "We look forward to seeing you at our next meeting on December 14 at the Sachem Public Library. Check back here for more information."
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,8 +38,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/data/`,
-      },
+        path: `./src/data/`
+      }
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-material-ui`
