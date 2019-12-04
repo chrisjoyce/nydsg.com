@@ -34,21 +34,22 @@ function IndexPage() {
 
       <section className="leading-loose">
         <img className="float-left mr-4 my-2 h-48" src={logo} />
+        <div class="news">
+          <p className="leading-normal pb-3 text-md">
+            <div>Welcome to NYDSG</div>
+            {data.site.siteMetadata.news.title}
+          </p>
 
-        <p className="leading-normal pb-3 text-md">
-          <div>Welcome to NYDSG</div>
-          {data.site.siteMetadata.news.title}
-        </p>
+          <p className="leading-normal pb-5">
+            {data.site.siteMetadata.news.body}
+          </p>
 
-        <p className="leading-normal pb-5">
-          {data.site.siteMetadata.news.body}
-        </p>
-
-        <p className="leading-normal pb-5">
-          <div pb-2>Christine Joyce</div>
-        </p>
-
-        <p className="text-center text-xl">
+          <p className="leading-normal pb-5">
+            <div>Christine Joyce</div>
+            <div>President</div>
+          </p>
+        </div>
+        <p className="text-center text-xl pt-4">
           <div>
             <span className="text-yellow-800">**</span> We welcome you to join
             us for a meeting {data.site.siteMetadata.news.meeting.date}
@@ -64,7 +65,6 @@ function IndexPage() {
             </a>
           </div>
         </p>
-
         <p className="text-center text-4xl pt-10">
           <Link to="members">Please feel free to contact us.</Link>
         </p>
