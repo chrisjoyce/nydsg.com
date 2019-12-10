@@ -7,7 +7,7 @@ function Header({ siteTitle }) {
 
   return (
     <nav className="bg-teal-700">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
+      <div className="flex items-center justify-between max-w-5xl mx-auto p-4 md:p-8">
         <Link to="/" className="flex items-center no-underline text-white">
           <svg
             className="fill-current h-8 mr-2 w-8"
@@ -64,6 +64,12 @@ function Header({ siteTitle }) {
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
               Hotline
+            </Link>
+            <Link
+              to="/board"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
+            >
+              Board
             </Link>
             <Link
               to="/blog"
