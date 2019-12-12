@@ -4,12 +4,12 @@ module.exports = {
     description: `Gatsby starter styled with Tailwind`,
     news: {
       meeting: {
-        date: "December 14th",
-        time: "12 - 1:30pm"
+        date: "in January",
+        time: ""
       },
       title: "",
       body:
-        "We look forward to seeing you at our next meeting on December 14 at the Sachem Public Library. Check back here for more information."
+        "The December 14 meeting has been changed. Please call me for more information."
     }
   },
   plugins: [

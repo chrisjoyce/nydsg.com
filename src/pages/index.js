@@ -47,6 +47,7 @@ function IndexPage() {
           <p className="leading-normal pb-5">
             <div>Christine Joyce</div>
             <div>President</div>
+            <div>516-429-2644</div>
           </p>
         </div>
         <p className="text-center text-xl pt-4">
@@ -55,7 +56,7 @@ function IndexPage() {
             us for a meeting {data.site.siteMetadata.news.meeting.date}
           </div>
           <div>
-            from {data.site.siteMetadata.news.meeting.time} at the{" "}
+            {data.site.siteMetadata.news.meeting.time} at the{" "}
             <a
               target="_blank"
               href="https://www.google.com/maps/dir//150%20Holbrook%20Rd,%20Holbrook,%20NY%2011741"
