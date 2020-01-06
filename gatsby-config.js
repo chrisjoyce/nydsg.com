@@ -8,8 +8,11 @@ module.exports = {
         time: ""
       },
       title: "",
-      body:
-        "The December 14 meeting has been changed. Please call me for more information."
+      body: {
+        p1:
+          "Our next board meeting is scheduled for Saturday January 11 from 12 to 1:30 pm at the Sachem Library.",
+        p2: "See directions below."
+      }
     }
   },
   plugins: [

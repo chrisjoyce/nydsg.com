@@ -13,7 +13,10 @@ function IndexPage() {
         siteMetadata {
           news {
             title
-            body
+            body {
+              p1
+              p2
+            }
             meeting {
               date
               time
@@ -36,12 +39,13 @@ function IndexPage() {
         <img className="float-left mr-4 my-2 h-48" src={logo} />
         <div class="news">
           <p className="leading-normal pb-3 text-md">
-            <div>Welcome to NYDSG</div>
+            <div>Happy New Year from NYSDG.com!</div>
             {data.site.siteMetadata.news.title}
           </p>
 
           <p className="leading-normal pb-5">
-            <span>{data.site.siteMetadata.news.body}</span>
+            <div>{data.site.siteMetadata.news.body.p1}</div>
+            <div class="pt-1">{data.site.siteMetadata.news.body.p2}</div>
           </p>
 
           <p className="leading-normal pb-5">
