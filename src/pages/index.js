@@ -39,7 +39,7 @@ function IndexPage() {
         <img className="float-left mr-4 my-2 h-48" src={logo} />
         <div class="news">
           <p className="leading-normal pb-3 text-md">
-            <div>Happy New Year from NYSDG.com!</div>
+            <div>Happy New Year from NYDSG.com!</div>
             {data.site.siteMetadata.news.title}
           </p>
 
