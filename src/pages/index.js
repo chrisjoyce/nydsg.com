@@ -44,8 +44,8 @@ function IndexPage() {
           </p>
 
           <p className="leading-normal pb-5">
-            <div>{data.site.siteMetadata.news.body.p1}</div>
-            <div class="pt-1">{data.site.siteMetadata.news.body.p2}</div>
+            <span>{data.site.siteMetadata.news.body.p1}</span>
+            <div class="pt-2 pb-2">{data.site.siteMetadata.news.body.p2}</div>
           </p>
 
           <p className="leading-normal pb-5">
