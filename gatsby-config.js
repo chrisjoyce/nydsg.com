@@ -10,8 +10,8 @@ module.exports = {
       title: "",
       body: {
         p1:
-          "Our next board meeting is scheduled for Saturday January 11 from 12 to 1:30 pm at the Sachem Library.",
-        p2: "See directions below."
+          "Board meeting has been changed to January 18. Please call for for more information.",
+        p2: ""
       }
     }
   },
