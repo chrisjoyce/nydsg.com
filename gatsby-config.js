@@ -7,11 +7,11 @@ module.exports = {
         date: "in January",
         time: ""
       },
-      title: "",
+      title: "Welcome to NYDSG.com!",
       body: {
-        p1:
-          "Board meeting has been changed to January 18. Please call for for more information.",
-        p2: ""
+        p1: "Check out our new blog “How We Began”.",
+        p2:
+          "The next board meeting will be Saturday, February 8 at the Sachem Library from 12 to 1:30 pm. Please call me for more information."
       }
     }
   },
