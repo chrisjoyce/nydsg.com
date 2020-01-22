@@ -9,7 +9,7 @@ function BlogPage() {
     <Layout>
       <SEO title="Blog" keywords={[`nydsg`]} />
 
-      <section className="flex flex-col md:flex-row items-center leading-normal">
+      <section className="flex flex-col items-center leading-normal">
         <div className="text-2xl">“How We Began”</div>
         <div className="md:w-2/3 md:mr-8">
           <p className="pb-3">
