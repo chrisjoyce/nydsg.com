@@ -55,7 +55,7 @@ function IndexPage() {
             <div>516-429-2644</div>
           </p>
         </div>
-        <p className="text-center text-xl pt-4">
+        {/* <p className="text-center text-xl pt-4">
           <div>
             <span className="text-yellow-800">**</span> We welcome you to join
             us for a meeting {data.site.siteMetadata.news.meeting.date}
@@ -70,7 +70,7 @@ function IndexPage() {
               <span className="text-yellow-800">**</span>
             </a>
           </div>
-        </p>
+        </p> */}
         <p className="text-center text-4xl pt-10">
           <Link to="members">Please feel free to contact us.</Link>
         </p>
