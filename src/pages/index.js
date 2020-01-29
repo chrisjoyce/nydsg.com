@@ -72,7 +72,7 @@ function IndexPage() {
           </div>
         </p> */}
         <p className="text-center text-4xl pt-10">
-          <Link to="members">Please feel free to contact us.</Link>
+          <Link to="/members">Please feel free to contact us.</Link>
         </p>
       </section>
     </Layout>
