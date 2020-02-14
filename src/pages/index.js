@@ -46,7 +46,7 @@ function IndexPage() {
             <span span="leading-normal">
               {data.site.siteMetadata.news.body.p1}
             </span>
-            <div class="pt-2 pb-2">{data.site.siteMetadata.news.body.p2}</div>
+            <div class="pt-2 pb-2">March is Colorectal Cancer Awareness Month. Visit New York Colorectal Cancer Survivorship and Support Group at <a href="http://NYCRCSSG.org">http://NYCRCSSG.org</a> for more information.</div>
           </p>
 
           <p className="leading-normal pb-5">
