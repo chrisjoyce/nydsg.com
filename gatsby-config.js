@@ -11,7 +11,7 @@ module.exports = {
       body: {
         p1: "Check out our new blog “How We Began”.",
         p2:
-          "March is Colorectal Cancer Awareness Month. Visit New York Colorectal Cancer Survivorship and Support Group at <a href="http://NYCRCSSG.org">NYCRCSSG.org</a> for more information."
+          "March is Colorectal Cancer Awareness Month. Visit New York Colorectal Cancer Survivorship and Support Group at http://NYCRCSSG.org for more information."
       }
     }
   },
