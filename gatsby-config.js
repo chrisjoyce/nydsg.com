@@ -11,7 +11,7 @@ module.exports = {
       body: {
         p1: "Check out our new blog “How We Began”.",
         p2:
-          "The next board meeting will be Saturday, February 8 at the Sachem Library from 12 to 1:30 pm. Please call me for more information."
+          "March is Colorectal Cancer Awareness Month. Visit New York Colorectal Cancer Survivorship and Support Group at <a href="http://NYCRCSSG.org">NYCRCSSG.org</a> for more information."
       }
     }
   },
