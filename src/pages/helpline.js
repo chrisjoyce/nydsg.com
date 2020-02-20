@@ -6,14 +6,13 @@ import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
-import TableHead from '@material-ui/core/TableHead';
+import TableHead from "@material-ui/core/TableHead";
 
 import { withStyles } from "@material-ui/core/styles";
 import { useStaticQuery, graphql } from "gatsby";
-import Paper from '@material-ui/core/Paper';
+import Paper from "@material-ui/core/Paper";
 
-import { makeStyles } from '@material-ui/core/styles';
-
+import { makeStyles } from "@material-ui/core/styles";
 
 const StyledTableRow = withStyles(theme => ({
   root: {
@@ -32,7 +31,6 @@ const StyledTableCell = withStyles(theme => ({
     fontSize: 14
   }
 }))(TableCell);
-
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -104,7 +102,7 @@ function MembersPage() {
 
       <br></br>
       <div className="text-center text-xl font-bold pb-4">
-        <h1>Emergency Surgery with temporary ostomy</h1>
+        <h1>Complicated Diverticulitis</h1>
       </div>
 
       <Table>
@@ -114,8 +112,12 @@ function MembersPage() {
               <StyledTableCell component="th" scope="row">
                 {row.name}
               </StyledTableCell>
-              <StyledTableCell align="right">{ row.contact && row.contact.phone }</StyledTableCell>
-              <StyledTableCell align="right">{ row.contact && row.contact.email }</StyledTableCell>
+              <StyledTableCell align="right">
+                {row.contact && row.contact.phone}
+              </StyledTableCell>
+              <StyledTableCell align="right">
+                {row.contact && row.contact.email}
+              </StyledTableCell>
 
               {/*
               <StyledTableCell align="right">{row.carbs}</StyledTableCell>
@@ -126,7 +128,7 @@ function MembersPage() {
           <TableRow>
             <TableCell rowSpan={2} colSpan={3} align="center">
               <div className="text-center text-xl font-bold pb-4">
-                <h1>Elective Surgery without ostomy</h1>
+                <h1>Uncomplicated Diverticulitis</h1>
               </div>
             </TableCell>
           </TableRow>
@@ -137,13 +139,40 @@ function MembersPage() {
               <StyledTableCell component="th" scope="row">
                 {row.name}
               </StyledTableCell>
-              <StyledTableCell align="right">{ row.contact && row.contact.phone }</StyledTableCell>
-              <StyledTableCell align="right">{ row.contact && row.contact.email }</StyledTableCell>
+              <StyledTableCell align="right">
+                {row.contact && row.contact.phone}
+              </StyledTableCell>
+              <StyledTableCell align="right">
+                {row.contact && row.contact.email}
+              </StyledTableCell>
               {/*
               <StyledTableCell align="right">{row.carbs}</StyledTableCell>
               <StyledTableCell align="right">{row.protein}</StyledTableCell> */}
             </StyledTableRow>
           ))}
+
+          <TableRow>
+            <TableCell rowSpan={2} colSpan={3} align="center">
+              <div className="text-center text-xl font-bold pb-4">
+                <h1>Nonoperative </h1>
+              </div>
+            </TableCell>
+          </TableRow>
+          <TableRow></TableRow>
+          <StyledTableRow key="nonoperative">
+            <StyledTableCell component="th" scope="row">
+              Laura Foscolo
+            </StyledTableCell>
+            <StyledTableCell align="right">(631) 325-1212</StyledTableCell>
+            <StyledTableCell align="right"></StyledTableCell>
+          </StyledTableRow>
+          <StyledTableRow key="nonoperative">
+            <StyledTableCell component="th" scope="row">
+              Camille Milo
+            </StyledTableCell>
+            <StyledTableCell align="right">(347) 637-0266</StyledTableCell>
+            <StyledTableCell align="right"></StyledTableCell>
+          </StyledTableRow>
         </TableBody>
       </Table>
     </Layout>

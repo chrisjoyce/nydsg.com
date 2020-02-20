@@ -12,6 +12,17 @@
     "surgeryType": "emergency"
   },
   {
+    "name": "Michael Scialabba",
+    "contact": {
+      "phone": "(631) 846-3074",
+      "email": ""
+    },
+    "board": false,
+    "hotline": true,
+    "ostomy": true,
+    "surgeryType": "emergency"
+  },
+  {
     "name": "Diego Arango",
     "role": "Vice President",
     "board": true,

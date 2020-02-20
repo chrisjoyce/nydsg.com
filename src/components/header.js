@@ -60,10 +60,10 @@ function Header({ siteTitle }) {
               Information
             </Link>
             <Link
-              to="/hotline"
+              to="/helpline"
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-white"
             >
-              Hotline
+              Helpline
             </Link>
             <Link
               to="/board"
